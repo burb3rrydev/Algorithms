@@ -1,0 +1,64 @@
+SlopChecker - Determining Valid Slops
+
+Description
+
+SlopChecker is a Java program that reads input from a file named "input.txt" and determines whether a given string of characters is a valid Slop. 
+
+A Slop is a specific character string consisting of a 'Slap' followed by a 'Slip'.
+
+Definitions
+
+Before we proceed, let's define the terms used in this program:
+
+Slap: A Slap is a character string that starts with an 'A' and has one of the following two forms:
+A two-character Slap where the second character is 'H'.
+A Slap of the form 'A' followed by 'B' followed by a Slap, followed by 'C'.
+A Slap of the form 'A' followed by a Slip (see below), followed by 'C'.
+
+Slip: A Slip is a character string that starts with either 'D' or 'E', followed by one or more 'F's, and finally ends with a 'G'.
+Slop: A Slop is a character string that consists of a valid Slap followed by a valid Slip.
+
+How the Program Works
+
+The program is organized into three classes:
+
+SlopsChecker: This is the main class that reads input from the "input.txt" file and checks whether each string is a valid Slop. 
+It combines the results from the isSlap method in the SlapChecker class and the isSlip method in the SlipChecker class to determine if a string is a Slop.
+
+SlapChecker: This class contains the logic to check if a given string is a valid Slap. It examines the properties of a Slap and recursively validates the string to ensure 
+it adheres to the defined forms.
+
+SlipChecker: This class contains the logic to check if a given string is a valid Slip. It validates that the string starts with either 'D' or 'E', followed by one or more 'F's, and ends with a 'G'.
+
+How to Use the Program
+
+Create a file named "input.txt" in the same directory as the Java program.
+In "input.txt", provide an integer N between 1 and 100 on the first line, indicating how many strings of characters are to be tested.
+On the next N lines, provide the strings that you want to check for Slop validity.
+Run the Java program, and it will display the results for each string in the format "Is 'STRING' a Slop? true/false".
+Example
+
+Suppose "input.txt" contains the following:
+
+5
+AHDFG
+ADFGCDFFFFFG
+ABAEFGCCDFEFFFFFG
+AHDFGA
+DFGAH
+
+Running the program will produce the following output:
+
+Slop
+Slop
+Not Slop
+Not Slop
+Not Slop
+
+Efficiency of String Processing Functions
+
+The string processing functions in this program use recursion to validate the properties of Slaps and Slips. Recursion is an efficient technique when used correctly, 
+and in this case, it helps keep the code clean and concise. The efficiency of these functions will largely depend on the length and complexity of the input strings. 
+In most cases, the program should handle the processing efficiently for a reasonable number of characters in the strings.
+
+Feel free to explore the program, test it with different strings, and enjoy exploring the world of Slaps, Slips, and Slops! Happy coding!
