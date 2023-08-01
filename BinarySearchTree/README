@@ -1,0 +1,51 @@
+Binary Search Tree (BST) Program
+
+Description
+
+This Java program implements a Binary Search Tree (BST) data structure. It reads words from a file and inserts them into the BST. The program allows the user to perform search and removal operations on the tree. It displays the contents of the tree using an in-order traversal.
+
+Features
+
+Insertion: Words from a file are inserted into the Binary Search Tree, ensuring no duplicates are stored.
+In-Order Traversal: The program displays the contents of the tree in ascending order using in-order traversal.
+Search: Users can search for a word in the tree. The program will report whether the word is found and the number of elements inspected during the search.
+Removal: Users can remove a word from the tree. The program will then print the updated contents of the tree after removal.
+Getting Started
+
+Clone the repository or download the source code files.
+Ensure you have Java JDK installed on your system.
+Compile the program using the following command in the terminal or command prompt:
+
+javac app/BinarySearchTree.java
+
+Run the program with the following command:
+
+java app.BinarySearchTree
+
+The program will prompt you to enter 1 for search, 2 for removal, or 3 to quit.
+
+Usage
+
+Insertion: The program automatically reads words from the "input.txt" file and inserts them into the Binary Search Tree.
+In-Order Traversal: After inserting the words, the program performs an in-order traversal and displays the contents of the tree in the console.
+Search: If you choose option 1, the program will ask you to enter a word to search for. It will then display whether the word is found or not and the number of elements 
+inspected during the search.
+Removal: If you choose option 2, the program will ask you to enter a word to remove from the tree. It will then print the updated contents of the tree after the removal.
+Quit: To exit the program, choose option 3.
+Example Input
+
+The "input.txt" file should contain a list of words, each separated by a space or newline.
+
+Example "input.txt":
+
+hello world example data structure binary tree program
+
+Output
+
+The program will display the contents of the tree using in-order traversal. When searching for a word, it will report whether the word is found and the number of elements inspected.
+When removing a word, it will print the updated tree contents.
+
+Efficiency Analysis
+
+The search and removal operations in a balanced Binary Search Tree have a time complexity of O(log n), where n is the number of nodes in the tree. However, 
+in the worst-case scenario, when the tree is completely unbalanced (e.g., a skewed tree), the time complexity becomes O(n), making these operations less efficient.
