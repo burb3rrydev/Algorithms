@@ -1,0 +1,42 @@
+# Dijkstra's Algorithm Implementation
+
+This repository contains a Java implementation of Dijkstra's Algorithm to find the shortest paths in a weighted graph. 
+The algorithm is demonstrated through a practical example, showcasing its importance in solving shortest path problems.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Code Explanation](#code-explanation)
+- [Example](#example)
+- [Algorithm Complexity](#algorithm-complexity)
+- [Contributing](#contributing)
+
+## Introduction
+Dijkstra's Algorithm is a widely used graph search algorithm that efficiently finds the shortest paths between vertices in a 
+weighted graph. This repository includes a Java implementation of the algorithm, along with a practical example to illustrate 
+its working.
+
+## Usage
+1. Ensure you have Java installed on your system.
+2. Clone this repository: `git clone https://github.com/burb3rrydev/DijkstraAlgorithmDemo.git`
+3. Navigate to the repository directory: `cd DijkstraAlgorithmDemo`
+4. Compile the Java source code: `javac DijkstraAlgorithmDemo.java`
+5. Run the program: `java DijkstraAlgorithmDemo`
+
+## Code Explanation
+The code is divided into several components:
+- `Graph` class: Represents the graph structure and manages edge information.
+- `dijkstra` function: Implements the Dijkstra's Algorithm to calculate shortest paths.
+- Priority Queue: Utilized to efficiently select vertices based on their current distances.
+
+## Example
+The repository includes a predefined graph with vertices and weighted edges. The example demonstrates how to use Dijkstra's Algorithm 
+to find the shortest path between two specific vertices.
+
+## Algorithm Complexity
+The time complexity of Dijkstra's Algorithm is O((V + E) * log V), where V is the number of vertices and E is the number of edges. 
+This complexity arises from the use of a priority queue for efficient vertex selection.
+
+## Contributing
+Contributions are welcome! Feel free to submit issues or pull requests if you encounter any bugs, have suggestions for improvements, 
+or want to add new features.
