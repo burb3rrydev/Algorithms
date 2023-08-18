@@ -1,0 +1,63 @@
+Graph Data Structure README
+
+This Java project implements a Graph data structure along with a test class GraphTest to demonstrate its functionality. 
+A graph is a fundamental data structure used to represent relationships between objects. 
+This implementation focuses on an undirected graph with weighted edges.
+
+Graph Class
+
+Overview
+
+The Graph class represents an undirected graph with a fixed number of vertices. It allows you to add edges between vertices along with 
+associated distances, retrieve distances between vertices, and obtain lists of neighboring vertices for a given vertex.
+
+Constructors
+
+Graph(int numVertices): Creates a graph with the specified number of vertices.
+
+Methods
+
+void addEdge(int start, int end, int distance): Adds an edge between vertices start and end with the given distance.
+int getDistance(int start, int end): Retrieves the distance between vertices start and end.
+List<Integer> getNeighbors(int vertex): Returns a list of neighboring vertices for the specified vertex.
+void printAdjacencyMatrix(): Prints the adjacency matrix representation of the graph.
+
+GraphTest Class
+
+The GraphTest class serves as an example of using the Graph class and demonstrates its functionality through various operations.
+
+Usage
+
+Define the vertex names in the vertices array.
+Create an instance of the Graph class by specifying the number of vertices.
+Use the addEdge method to add edges and distances to the graph.
+Call printAdjacencyMatrix() to visualize the adjacency matrix of the graph.
+
+
+// Adding edges and distances
+graph.addEdge(startVertex, endVertex, distance);
+
+// Printing adjacency matrix
+graph.printAdjacencyMatrix();
+
+Testing
+
+The GraphTest class showcases the usage of the graph methods by calculating distances between specific vertices and obtaining lists 
+of neighboring vertices for a selected vertex.
+
+
+
+// Calculate the distance between startVertex and endVertex
+int distance = graph.getDistance(startVertex, endVertex);
+System.out.println("Distance between " + vertices[startVertex] + " and " + vertices[endVertex] + ": " + distance);
+
+// Get neighbors of a vertex
+List<Integer> neighbors = graph.getNeighbors(startVertex);
+System.out.println("Neighbors of " + vertices[startVertex] + ": " + neighbors);
+
+How to Run
+
+Ensure you have Java installed on your system.
+Copy the provided code into separate .java files named Graph.java and GraphTest.java.
+Compile both files using javac Graph.java GraphTest.java.
+Run the GraphTest class using java GraphTest.
